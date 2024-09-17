@@ -1,0 +1,19 @@
+.. _ga4gh: https://www.ga4gh.org/
+.. _my-project-issues: https://github.com/mygit/my-project/
+
+.. _vrs: https://vrs.ga4gh.org/en/latest/index.html
+.. _cat-vrs: https://cat-vrs.readthedocs.io/en/latest/index.html
+.. _va-spec: https://va-ga4gh.readthedocs.io/en/latest/index.html
+
+
+.. |va-spec| replace:: `VA Spec <https://github.com/ga4gh/va-spec/>`__
+.. |cat-vrs| replace:: `Cat-VRS <https://github.com/ga4gh/cat-vrs/>`__
+.. |vrs| replace:: `VRS <https://github.com/ga4gh/vrs/>`__
+.. |vrs-python| replace:: `VRS-Python <https://github.com/ga4gh/vrs-python/>`__
+.. |gks-common| replace:: `GKS Common <https://github.com/ga4gh/gks-common/>`__
+
+.. |eg| replace:: *e.g.,*
+.. |ie| replace:: *i.e.,*
+
+
+

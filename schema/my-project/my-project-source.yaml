@@ -1,0 +1,46 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://w3id.org/my-domain-name/schema/my-project/1.0/my-project-source.yaml"
+title: My GA4GH GKS profile
+type: object
+
+imports:
+  gks.core-im: ../core-im/core-im-source.yaml
+  gks.data-types: ../data-types/data-types-source.yaml
+  # vrs: ../vrs/vrs-source.yaml
+  # cat-vrs: ../cat-vrs/cat-vrs-source.yaml
+  # va.varpath: ../profiles/var-path-stmt-source.yaml
+
+$defs:
+
+  # Add new definitions, properties, extensions below
+  MyNewStatement:
+    type: object
+    maturity: draft
+    inherits: gks.core-im:Statement
+    description: >-
+      An example of a new Statement type that extends the core Statement type.
+    properties:
+      type:
+        extends: type
+        const: "MyNewStatement"
+        default: "MyNewStatement"
+        description: MUST be "MyNewStatement".    
+    #   subjectVariant:
+    #     extends: subject
+    #     oneOf:
+    #     - $ref: "/ga4gh/schema/cat-vrs/1.x/json/ClinvarCategoricalVariant"
+    #     - $ref: "/ga4gh/schema/gks-common/1.x/data-types/json/IRI"
+    #     description: A Clinvar-GKS categorical variant that is the subject of the Statement.          
+    #   predicate:
+    #     extends: predicate
+    #     const: myNewPredicate
+    #   objectCondition:
+    #     extends: object
+    #     oneOf:
+    #     - $ref: "/ga4gh/schema/gks-common/1.x/domain-entities/json/Condition"
+    #     - $ref: "/ga4gh/schema/gks-common/1.x/data-types/json/IRI"
+    #     description: The :ref:`Condition` for which myNewStatement's subject is stated.
+    # required:
+    # - subjectVariant
+    # - predicate
+    # - objectCondition
