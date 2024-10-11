@@ -1,0 +1,8 @@
+type: MyNewStatement
+subject:
+  id: "https://w3id.org/my-domain-name/data/variant/1.0/variant-source.yaml"
+  type: CategoricalVariant
+predicate: isCausalFor
+object: 
+  id: "https://w3id.org/my-domain-name/data/condition/1.0/condition-source.yaml"
+  type: Condition
