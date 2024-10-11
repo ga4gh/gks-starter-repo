@@ -4,11 +4,11 @@ title: My GA4GH GKS profile
 type: object
 
 imports:
-  gks.core-im: ../core-im/core-im-source.yaml
-  gks.data-types: ../data-types/data-types-source.yaml
+  gks.core: ../gks.core/core-im-source.yaml
   # vrs: ../vrs/vrs-source.yaml
-  # cat-vrs: ../cat-vrs/cat-vrs-source.yaml
-  # va.varpath: ../profiles/var-path-stmt-source.yaml
+  # cat-vrs.profiles: ../cat-vrs.profiles/cat-vrs-profiles-source.yaml
+  # va.varpath: ../va.profiles/var-path-stmt-source.yaml
+  # va.varstudy: ../va.profiles/var-study-stmt-source.yaml
 
 $defs:
 
@@ -16,7 +16,7 @@ $defs:
   MyNewStatement:
     type: object
     maturity: draft
-    inherits: gks.core-im:Statement
+    inherits: gks.core:Statement
     description: >-
       An example of a new Statement type that extends the core Statement type.
     properties:
